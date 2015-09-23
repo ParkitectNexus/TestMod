@@ -22,6 +22,8 @@ namespace ParkitectModTools
 
         public void OnGUI()
         {
+            GUI.Label(new Rect(475, 20, 250, 20), "The test mod has been loaded, yay!");
+
             if (Application.loadedLevel != 2)
                 return;
 

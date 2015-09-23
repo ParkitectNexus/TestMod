@@ -1,0 +1,13 @@
+{
+    "AssemblyFileName":"ParkitectModTools.dll",
+    "ClassName":"Main",
+    "CodeFiles":[],
+    "EnableLogging":true,
+    "ForceCompile":true,
+    "MethodName":"Load",
+    "Name":"Test Mod",
+    "NameSpace":"ParkitectModTools",
+    "Project":"ParkitectModTools.csproj",
+    "Repository":"ParkitectNexus/TestMod",
+    "Tag":"v0.1"
+}
