@@ -203,4 +203,4 @@ FakesAssemblies/
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
 
-ParkitectModTools.dll
+compiled.dll
