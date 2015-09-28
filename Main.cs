@@ -1,21 +1,34 @@
-﻿// ParkitectNexusClient
-// Copyright 2015 Parkitect, Tim Potze
+﻿using UnityEngine;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
-
-namespace ParkitectModTools
+namespace TestMod
 {
-    public static class Main
+    public class Main : IMod
     {
-        public static void Load()
+        private GameObject _gameObject;
+
+        #region Implementation of IMod
+
+        public void onEnabled()
         {
-            GameObject go = new GameObject();
-            go.AddComponent<ModtoolsMonoBehaviour>();
+            _gameObject = new GameObject();
+            _gameObject.AddComponent<TestMod>();
         }
+
+        public void onDisabled()
+        {
+            Object.Destroy(_gameObject);
+        }
+
+        public string Name
+        {
+            get { return "TestMod"; }
+        }
+
+        public string Description
+        {
+            get { return "TestMod"; }
+        }
+
+        #endregion
     }
 }

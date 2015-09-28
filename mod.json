@@ -1,10 +1,1 @@
-{
-    "ClassName":"Main",
-    "CodeFiles":[],
-    "EnableLogging":true,
-    "ForceCompile":true,
-    "MethodName":"Load",
-    "Name":"Test Mod",
-    "NameSpace":"ParkitectModTools",
-    "Project":"ParkitectModTools.csproj",
-}
+{"AssetBundleDir":null,"AssetBundlePrefix":null,"BaseDir":null,"CompilerVersion":"v4.0","CodeFiles":[],"BuildPath":"bin/build-150928114837.dll","EntryPoint":"TestMod.Main","IsDevelopment":false,"IsEnabled":false,"Name":"Test Mod","Project":"TestMod.csproj","Tag":null,"ReferencedAssemblies":[],"Repository":null}

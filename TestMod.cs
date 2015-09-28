@@ -1,26 +1,18 @@
-﻿// ParkitectNexusClient
-// Copyright 2015 Parkitect, Tim Potze
-
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 using UnityEngine;
 
-namespace ParkitectModTools
+namespace TestMod
 {
-    class ModtoolsMonoBehaviour : MonoBehaviour
+    class TestMod : MonoBehaviour
     {
-        public void Awake()
+        private bool _superSpeed;
+
+        private void Awake()
         {
             DontDestroyOnLoad(transform.gameObject);
         }
 
-        private bool superSpeed = false;
-
-        public void OnGUI()
+        private void OnGUI()
         {
             GUI.Label(new Rect(475, 20, 250, 20), "The test mod has been loaded, yay!");
 
@@ -42,20 +34,13 @@ namespace ParkitectModTools
             }
             if (GUI.Button(new Rect(250, 70, 200, 20), "Toggle superspeed (10x)"))
             {
-                superSpeed = !superSpeed;
+                _superSpeed = !_superSpeed;
 
-                if (superSpeed)
-                {
-                    Time.timeScale = 10;
-                }
-                else
-                {
-                    Time.timeScale = 1;
-                }
+                Time.timeScale = _superSpeed ? 10 : 1;
             }
         }
 
-        public IEnumerator SpawnGuests()
+        private IEnumerator SpawnGuests()
         {
             for (;;)
             {
